@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Registro_maestros.css">
+    <title>Registro de maestro</title>
+</head>
+<body>
+<div>
+    <h1>Registro de maestros</h1>
+    <form action="Conecciones/ConectoresMaestros.php" id="formulariomaestro" method="post">
+
+        <label for="codigo">Código generado:</label>
+        <input type="text" id="codigo" name="codigo" readonly required>
+
+        <label for="nombre1">Primer nombre:</label>
+        <input type="text" id="nombre1" name="nombre1" required>
+
+        <label for="nombre2">Segundo nombre:</label>
+        <input type="text" id="nombre2" name="nombre2">
+
+        <label for="apellido1">Primer Apellido:</label>
+        <input type="text" id="apellido1" name="apellido1" required>
+
+        <label for="apellido2">Segundo Apellido:</label>
+        <input type="text" id="apellido2" name="apellido2">
+
+        <label for="DUI">DUI</label>
+        <input type="text" id="DUI" name="DUI" maxlength="10" placeholder="00000000-0" >
+        
+        <label for="cargo">Cargo</label>
+        <select id="curso" name="Cargo" required>
+            <option value=" "> </option>
+            <option value="Director/a">Director/a</option>
+            <option value="Sub Director/a">Sub Director/a</option>
+            <option value="Coordinador de maestros">Coordinador de maestros</option>
+            <option value="Maestro">Maestro</option>
+            <option value="Secretaría">Secretaría</option>
+        </select>
+
+        <label for="direccion" class="Direccion">Direccion</label>
+        <select id="curso" name="Departamento" required>
+            <option value=" "> </option>
+            <option value="Ahuachapán">Ahuachapán</option>
+            <option value="La Libertad">La Libertad</option>
+            <option value="San Salvador">San Salvador</option>
+            <option value="Cuscatlán">Cuscatlán</option>
+            <option value="Cabañas">Cabañas</option>
+            <option value="La Paz">La Paz</option>
+            <option value="La Unión">La Unión</option>
+            <option value="Usulután">Usulután</option>
+            <option value="Sonsonate">Sonsonate</option>
+            <option value="Santa Ana">Santa Ana</option>
+            <option value="San Vicente">San Vicente</option>
+            <option value="San Miguel">San Miguel</option>
+            <option value="Morazán">Morazán</option>
+            <option value="Chalatenango">Chalatenango</option>
+        </select>
+        
+        <select id="curso" name="Municipio" required>
+            <option value=" "> </option>
+            <option value="Municipio de Ahuachapán Centro">Municipio de Ahuachapán Centro</option>
+            <option value="Municipio de Ahuachapán Norte">Municipio de Ahuachapán Norte</option>
+            <option value="Municipio de Ahuachapán Sur">Municipio de Ahuachapán Sur</option>
+            <option value="Municipio de San Salvador Norte">Municipio de San Salvador Norte</option>
+            <option value="Municipio de San Salvador Oeste">Municipio de San Salvador Oeste</option>
+            <option value="Municipio de San Salvador Este">Municipio de San Salvador Este</option>
+            <option value="Municipio de San Salvador Centro">Municipio de San Salvador Centro</option>
+            <option value="Municipio de San Salvador Sur">Municipio de San Salvador Sur</option>
+            <option value="Municipio de La Libertad Norte">Municipio de La Libertad Norte</option>
+            <option value="Municipio de La Libertad Centro">Municipio de La Libertad Centro</option>
+            <option value="Municipio de La Libertad Oeste">Municipio de La Libertad Oeste</option>
+            <option value="Municipio de La Libertad Este">Municipio de La Libertad Este</option>
+            <option value="Municipio de La Libertad Costa">Municipio de La Libertad Costa</option>
+            <option value="Municipio de La Libertad Sur">Municipio de La Libertad Sur</option>
+            <option value="Municipio de Chalatenango Norte">Municipio de Chalatenango Norte</option>
+            <option value="Municipio de Chalatenango Centro">Municipio de Chalatenango Centro</option>
+            <option value="Municipio de Chalatenango Sur">Municipio de Chalatenango Sur</option>
+            <option value="Municipio de Cuscatlán Norte">Municipio de Cuscatlán Norte</option>
+            <option value="Municipio de Cuscatlán Sur">Municipio de Cuscatlán Sur</option>
+            <option value="Municipio de Cabañas Este">Municipio de Cabañas Este</option>
+            <option value="Municipio de Cabañas Oeste">Municipio de Cabañas Oeste</option>
+            <option value="Municipio de La Paz Oeste">Municipio de La Paz Oeste</option>
+            <option value="Municipio de La Paz Centro">Municipio de La Paz Centro</option>
+            <option value="Municipio de La Paz Este">Municipio de La Paz Este</option>
+            <option value="Municipio de La Unión Norte">Municipio de La Unión Norte</option>
+            <option value="Municipio de La Unión Sur">Municipio de La Unión Sur</option>
+            <option value="Municipio de Usulután Norte">Municipio de Usulután Norte</option>
+            <option value="Municipio de Usulután Este">Municipio de Usulután Este</option>
+            <option value="Municipio de Usulután Oeste">Municipio de Usulután Oeste</option>
+            <option value="Municipio de Sonsonate Norte">Municipio de Sonsonate Norte</option>
+            <option value="Municipio de Sonsonate Centro">Municipio de Sonsonate Centro</option>
+            <option value="Municipio de Sonsonate Este">Municipio de Sonsonate Este</option>
+            <option value="Municipio de Sonsonate Oeste">Municipio de Sonsonate Oeste</option>
+            <option value="Municipio de Santa Ana Norte">Municipio de Santa Ana Norte</option>
+            <option value="Municipio de Santa Ana Centro">Municipio de Santa Ana Centro</option>
+            <option value="Municipio de Santa Ana Este">Municipio de Santa Ana Este</option>
+            <option value="Municipio de Santa Ana Oeste">Municipio de Santa Ana Oeste</option>
+            <option value="Municipio de San Vicente Norte">Municipio de San Vicente Norte</option>
+            <option value="Municipio de San Vicente Sur">Municipio de San Vicente Sur</option>
+            <option value="Municipio de San Miguel Norte">Municipio de San Miguel Norte</option>
+            <option value="Municipio de San Miguel Centro">Municipio de San Miguel Centro</option>
+            <option value="Municipio de San Miguel Oeste">Municipio de San Miguel Oeste</option>
+            <option value="Municipio de Morazán Norte">Municipio de Morazán Norte</option>
+            <option value="Municipio de Morazán Sur">Municipio de Morazán Sur</option>          
+        </select>
+
+        <select id="curso" name="Distrito" required>
+            <option value=" "> </option>
+            <option value='Distrito de Ilopango'>Distrito de Ilopango</option>
+            <option value='Distrito de Soyapango'>Distrito de Soyapango</option>
+            <option value='Distrito de Tonacatepeque'>Distrito de Tonacatepeque</option>
+            <option value='Distrito de Ayutuxtepeque'>Distrito de Ayutuxtepeque</option>
+            <option value='Distrito de Mejicanos'>Distrito de Mejicanos</option>
+            <option value='Distrito de San Salvador'>Distrito de San Salvador</option>
+            <option value='Distrito de Cuscatancingo'>Distrito de Cuscatancingo</option>
+            <option value='Distrito de Ciudad Delgado'>Distrito de Ciudad Delgado</option>
+            <option value='Distrito de Panchimalco'>Distrito de Panchimalco</option>
+            <option value='Distrito de Rosario de Mora'>Distrito de Rosario de Mora</option>
+            <option value='Distrito de San Marcos'>Distrito de San Marcos</option>
+            <option value='Distrito de Santo Tomás'>Distrito de Santo Tomás</option>
+            <option value='Distrito de Santiago Texacuangos'>Distrito de Santiago Texacuangos</option>
+            <option value='Distrito de Quezaltepeque'>Distrito de Quezaltepeque</option>
+            <option value='Distrito de San Matías'>Distrito de San Matías</option>
+            <option value='Distrito de San Pablo Tacachico'>Distrito de San Pablo Tacachico</option>
+            <option value='Distrito de San Juan Opico'>Distrito de San Juan Opico</option>
+            <option value='Distrito de Ciudad Arce'>Distrito de Ciudad Arce</option>
+            <option value='Distrito de Colón'>Distrito de Colón</option>
+            <option value='Distrito de Jayaque'>Distrito de Jayaque</option>
+            <option value='Distrito de Sacacoyo'>Distrito de Sacacoyo</option>
+            <option value='Distrito de Tepecoyo'>Distrito de Tepecoyo</option>
+            <option value='Distrito de Talnique'>Distrito de Talnique</option>
+            <option value='Distrito de Antiguo Cuscatlán'>Distrito de Antiguo Cuscatlán</option>
+            <option value='Distrito de Huizucar'>Distrito de Huizucar</option>
+            <option value='Distrito de Nuevo Cuscatlán'>Distrito de Nuevo Cuscatlán</option>
+            <option value='Distrito de San José Villanueva'>Distrito de San José Villanueva</option>
+            <option value='Distrito de Zaragoza'>Distrito de Zaragoza</option>
+            <option value='Distrito de Chiltuipán'>Distrito de Chiltuipán</option>
+            <option value='Distrito de Jicalapa'>Distrito de Jicalapa</option>
+            <option value='Distrito de La Libertad'>Distrito de La Libertad</option>
+            <option value='Distrito de Tamanique'>Distrito de Tamanique</option>
+            <option value='Distrito de Teotepeque'>Distrito de Teotepeque</option>
+            <option value='Distrito de Comasagua'>Distrito de Comasagua</option>
+            <option value='Distrito de Santa Tecla'>Distrito de Santa Tecla</option>
+            <option value='Distrito de Aguilares'>Distrito de Aguilares</option>
+            <option value='Distrito de El Paisnal'>Distrito de El Paisnal</option>
+            <option value='Distrito de Guazapa'>Distrito de Guazapa</option>
+            <option value='Distrito de Apopa'>Distrito de Apopa</option>
+            <option value='Distrito de Nejapa'>Distrito de Nejapa</option>
+            <option value='Distrito de San Martín'>Distrito de San Martín</option>
+        </select>
+        
+        <input type="text" id="direccion" name="Colonia" placeholder="Colonia" required> 
+        <input type="text" id="direccion" name="Resto" placeholder="Calle, POL y Numero de casa" required> 
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required>
+
+        <label for="Telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required>
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="Genero">Genero:</label>
+        <select id="Genero" name="Genero" required>
+            <option value=" "> </option>
+            <option value="Masculino">Masculino</option>
+            <option value="Femenino">Femenino</option>
+        </select>
+
+        <label for="Medicamento">Medicamentos necesarios:</label>
+        <input type="text" id="Medicamento" name="Medicamento" required>
+        <div id="mensaje1">
+        Por favor, es importante para nosotros saber si necesitas tomar de manera frecuente algún medicamento, si es asi especifica el nombre de este, de lo contrario solo agrega "Ninguno" en esta seccion.</div>
+    
+        <label for="Enfermedad">Enfermedades: </label>
+        <input type="text" id="Enfermedad" name="Enfermedad" required>
+        <div id="mensaje2">
+        Por favor, es importante para nosotros saber padeces de alguna enfermedad para tener precausión con esta y tu seguridad, si es asi especifica el nombre de esta, de lo contrarion solo agreg "Ninguno" en esta seccion.</div>
+
+        <label for="Cemergencia" class="Cemergencia">Contacto de emergencia</label>
+        <input type="text" id="contacto" name="contacto" placeholder="Nombre del contacto de emergencia" required> 
+        <input type="text" id="contacto" name="contacto" placeholder="Relación con el empleado" required> 
+        <input type="tel" id="ctelefono" name="ctelefono" placeholder="Numero de telefono" required> 
+
+
+        <button type="submit">Registrar</button>
+
+        
+    </form>
+</div>
+  
+
+<script src="JS/Registro_maestros.js"> </script>
+</body>
+</html>

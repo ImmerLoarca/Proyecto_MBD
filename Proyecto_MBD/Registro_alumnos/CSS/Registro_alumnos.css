@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 35px;
+    font-size: 35px;
+}
+
+form {
+    width: 300px;
+    margin: 0 auto;
+}
+
+label {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.Direccion{
+    text-align: justify;
+    font-size: 16px;
+    margin-left: -auto;
+}
+
+#direccion{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Mensaje oculto para transporte*/
+#mensaje {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    color: #333;
+    display: none; /* Oculto por defecto */
+}
+
+/*Mensaje oculto para medicamento*/
+#mensaje1 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    color: #333;
+    display: none; /* Oculto por defecto */
+}
+
+/*Mensaje oculto para enfermedad*/
+#mensaje2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 500px;
+    color: #333;
+    display: none; /* Oculto por defecto */
+}
+
+/*Select de datos*/
+select {
+    width: calc(100% - -20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+option{
+    width: calc(100% - -20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.formulario {
+    margin-bottom: 20px;
+}
+
+.DatoRespo{
+    text-align: left;
+}
+
+/*Boton para remover al responsable*/
+.remove-btn {
+    position: block;
+    right: -20px;
+    top: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    cursor: pointer;
+    line-height: 1px;
+    padding-left: 4.3%;
+   
+}
+
+#agregarAdultoBtn{
+
+    font-size: 10px;
+    justify-content:center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
